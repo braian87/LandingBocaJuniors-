@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 221 83% 15%; /* Azul Boca */
+    --foreground: 45 100% 60%; /* Amarillo Boca */
+    --card: 221 83% 15%;
+    --card-foreground: 45 100% 60%;
+    --popover: 221 83% 15%;
+    --popover-foreground: 45 100% 60%;
+    --primary: 45 100% 60%; /* Amarillo Boca */
+    --primary-foreground: 221 83% 15%; /* Azul Boca */
+    --secondary: 221 83% 15%; /* Azul Boca */
+    --secondary-foreground: 45 100% 60%; /* Amarillo Boca */
+    --muted: 221 50% 25%; /* Azul Boca más oscuro */
+    --muted-foreground: 45 70% 70%; /* Amarillo Boca más claro */
+    --accent: 45 70% 50%; /* Amarillo Boca más oscuro */
+    --accent-foreground: 221 83% 15%; /* Azul Boca */
+    --destructive: 0 84.2% 60.2%; /* Rojo para alertas */
+    --destructive-foreground: 0 0% 98%;
+    --border: 45 100% 60%; /* Amarillo Boca */
+    --input: 45 100% 60%;
+    --ring: 45 100% 60%; /* Amarillo Boca */
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
